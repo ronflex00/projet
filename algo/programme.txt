@@ -1,0 +1,50 @@
+var : 
+joueur  / boolean
+attaque carte / int
+pv carte / int 
+pv joueur / int *2
+tour / boolean
+deck / tableau / int *2
+carte en main / tableau / int *2
+fosse / tableau / int *2
+pioche / tableau / int *2
+emplacement (1 à 12) / tableau / int
+cible / boolean
+
+
+conditions :
+bdd complet
+connexion avec la bdd
+deck choisie
+
+
+
+programme 1 :
+
+tour \ 0
+placement de une carte 
+tour \ 1
+programme 3()
+boucle pour faire du haut vers le bas
+si carte milieux sur même ligne 
+cible = carte adverse
+sinon cible = joueur adverse
+finsi
+fin boucle
+tour \ 0
+//////////////////////
+programme 2 :
+si un joueur n'a plus de pv fin du combat
+stop programme1()
+declarer gagnant
+sinon programme 1()
+//////////////////////
+programme 3 :
+si pioche vide
+melange fosse
+pioche = fosse
+vider fosse
+sinon
+prend une carte de la pioche pour la mettre dans la main
+finsi
+//////////////////////
