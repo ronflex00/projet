@@ -1,31 +1,24 @@
 .card {
     border: 1px solid #000;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px; /* Augmentation de la marge intérieure pour la lisibilité */
     width: 100px;
     height: 170px;
     display: flex;
-    flex-direction: row;
-    align-items: end;
+    flex-direction: column; /* Changement de direction pour aligner le texte en bas */
+    align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 20px;
 }
 
-.pv{
-    position: relative;
-}
-
-.att{
-    position: relative;
-}
+/* Suppression des règles pour .pv et .att, car elles ne sont pas nécessaires */
 
 .icone-pv,
 .icone-att {
     display: flex;
     width: 25px;
     height: 25px;
-    margin: 0%;
+    margin-right: 5px; /* Ajout de marge pour l'espace entre l'icône et le texte */
 }
 
 .icone {
@@ -35,12 +28,9 @@
 
 .pv p,
 .att p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Modification de la position à relative pour aligner le texte */
     margin: 0;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 body {
@@ -49,6 +39,7 @@ body {
     gap: 20px;
 }
 
+/* Ajout de styles spécifiques pour les colonnes gauche, centre et droite */
 #gauche {
     grid-column: 1;
 }
@@ -69,14 +60,40 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.colonne.vide {
+    display: none;
+}
 
-#image_1, #image_2, #image_3, #image_4, #image_5, #image_6, #image_7, #image_8, #image_9,
-#image_10, #image_11, #image_12 {
+/* Les règles spécifiques pour les images sont conservées */
+/* ... */
+#image_1,
+#image_2,
+#image_3,
+#image_4,
+#image_5,
+#image_6,
+#image_7,
+#image_8,
+#image_9,
+#image_10,
+#image_11,
+#image_12,
+#image_13,
+#image_14,
+#image_15,
+#image_16,
+#image_17,
+#image_18,
+#image_19,
+#image_20,
+#image_21 {
     background-size: cover;
     background-position: center;
     margin: 10px;
+    width: 90px; /* Appliqué à l'image_12 aussi */
 }
 
+/* Ajout de styles pour les images spécifiques */
 #image_1 {
     background-image: url(../image_carte/image_1.jpg);
 }
@@ -124,4 +141,40 @@ body {
 #image_12 {
     background-image: url(../image_carte/image_12.jpg);
     width: 90px;
+}
+
+#image_13 {
+    background-image: url(../image_carte/image_13.jpg);
+}
+
+#image_14 {
+    background-image: url(../image_carte/image_14.jpg);
+}
+
+#image_15 {
+    background-image: url(../image_carte/image_15.jpg);
+}
+
+#image_16 {
+    background-image: url(../image_carte/image_16.jpg);
+}
+
+#image_17 {
+    background-image: url(../image_carte/image_17.jpg);
+}
+
+#image_18 {
+    background-image: url(../image_carte/image_18.jpg);
+}
+
+#image_19 {
+    background-image: url(../image_carte/image_19.jpg);
+}
+
+#image_20 {
+    background-image: url(../image_carte/image_20.jpg);
+}
+
+#image_21 {
+    background-image: url(../image_carte/image_21.jpg);
 }

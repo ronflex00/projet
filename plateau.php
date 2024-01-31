@@ -1,7 +1,3 @@
-<?php
-require 'recherche_carte.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
